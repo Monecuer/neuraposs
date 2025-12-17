@@ -1,0 +1,31 @@
+/*
+  Netlify _redirects file for SPA routing
+  This ensures all routes serve index.html, allowing React Router to handle them client-side.
+*/
+/* Redirect all requests to index.html except for static assets */
+/* Place this file in your frontend/public or frontend/dist folder (where index.html is output) */
+/* If using Vite, use the dist folder. */
+
+/* Netlify SPA fallback */
+/* This must be the last rule */
+/*
+  /api/*    /api/:splat   200
+*/
+/* Main SPA fallback: */
+/* This will serve index.html for all non-file requests */
+/*
+  /*    /index.html   200
+*/
+/* The above is the only line you need for most React SPAs */
+/* Uncomment if you want to support API rewrites as well */
+/* /api/*  /api/:splat  200 */
+
+/* Actual rule: */
+/*
+  /*    /index.html   200
+*/
+/* End of file */
+/* Remove comments if you want, only the last line is required */
+/*
+  /*    /index.html   200
+*/
