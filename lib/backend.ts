@@ -1,7 +1,7 @@
 import { Client } from "../client";
 import { useAuth } from "@clerk/clerk-react";
 
-const backend = new Client("/api");
+const backend = new Client("https://anesu.monecuer.com");
 
 export function useBackend() {
   const { isSignedIn, getToken } = useAuth();
